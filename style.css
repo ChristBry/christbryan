@@ -621,6 +621,18 @@ h3.hello span {
     height: 50px;
     padding: 0 50px;
 }
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--text-black-700);
+}
+.copyright .fa-solid {
+    color: var(--skin-color);
+    font-size: 15px;
+}
 
 /* responsive */
 @media (max-width : 1199px) {
