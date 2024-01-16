@@ -530,9 +530,9 @@ h3.hello span {
     font-weight: 500;
 }
 .portfolio .portfolio-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: 30px;
+    flex: 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
 }
 .portfolio .portfolio-item-inner {
     border: 6px solid var(--bg-black-100);
@@ -544,6 +544,23 @@ h3.hello span {
     width: 100%;
     display: block;
 }
+.site-hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.lien-conteneur:hover .site-hover {
+    display: flex;
+  }
 
 /* contact */
 .contact-title {
@@ -620,6 +637,18 @@ h3.hello span {
 .contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--text-black-700);
+}
+.copyright .fa-solid {
+    color: var(--skin-color);
+    font-size: 15px;
 }
 
 /* responsive */
