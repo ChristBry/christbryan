@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@300&display=swap');
+body {
+    /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+}
+a {
+    color : #242424;
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-size: 1em;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3.5em;
+    font-family: 'Montserrat';
+    color: #A5B4FC;
+}
+p{
+    font-size: 1.1em;
+    font-family: 'Manrope';
+    color: #f9f8ff;
+}
+em {
+    color: #a5b4fc;
+    font-style: normal;
+}
+header {
+    background-color: white;
+    padding : 20px 50px 20px 50px;
+}
+footer {
+    background-color: white;
+    padding : 20px 50px 20px 50px;
+}
+li, h2 {
+    color: #f9f8ff;
+}
+.cta {
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+.cta:hover {
+    background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+}
+.carre-contenu {
+     border-right: 1px solid #8e86b5;
+     border-bottom: 1px solid #8e86b5;
+     padding : 50px;
+ } 
+.lien-icone {
+    margin-left: 30px;
+  }
+.lien-icone:hover {
+    opacity: 0.5;
+  }
+section {
+    padding : 80px;
+}
+.content-propos h2 {
+    margin-top: 30px;
+  }
+  
+.content-propos ul {
+    margin-top: 30px;
+  }
+.a-propos-main {
+    width: 50%;
+    margin: auto;
+  }
+  footer, nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+
+nav a {
+    margin-left: 30px;
+}
+
+.accueil-photos {
+    background-color: white;
+    padding: 80px;
+}
+  
+.accueil-photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+} 
+.accueil-photos div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+} 
+.portfolio-section-photos {
+    background-color: white;
+}
+  
+.portfolio-section-photos h2 {
+    color: #242424;
+    margin-bottom: 80px;
+}
+  
+.grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+}
+  
+.grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+  
+.grid-paysages img,
+.grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lien-conteneur-photo {
+    position: relative;
+  }
+  
+  .photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  .lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+  }
