@@ -10,7 +10,7 @@ try {
     if (todosInStorage) {
         todos = JSON.parse(todosInStorage)
     } 
-    const list = new TodoList(todos) 
+    const list = new TodoList(todos)
     list.appendTo(document.querySelector('#todolist'))
 } catch (e) {
     const alertElement = createElement('div', {

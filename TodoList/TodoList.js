@@ -1,4 +1,4 @@
-import { cloneTemplate } from "/TodoList/dom.js"
+import { cloneTemplate } from "/TodoList/dom.js" 
 import { createElement } from "/TodoList/dom.js" 
 
 /**
@@ -73,6 +73,7 @@ export class TodoList {
     #onUpdate () {
         localStorage.setItem('todos', JSON.stringify(this.#todos))
     }
+    
 
     #toggleFilter (e) {
         e.preventDefault()
