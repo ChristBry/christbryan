@@ -106,10 +106,22 @@ nav a {
 .accueil-introduction {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    align-items: center;
+    width: 60%;
+    align-items: flex-start;
     margin: auto;
 } 
+.accueil-introduction h1 {
+    margin-bottom: 15px;
+  }
+  
+.accueil-introduction p {
+    margin-bottom: 30px;
+}
+  
+.accueil-introduction div {
+    padding-right: 80px;
+}
+  
 .portfolio-section-photos {
     background-color: white;
 }
@@ -141,9 +153,9 @@ nav a {
 }
 .lien-conteneur-photo {
     position: relative;
-  }
+}
   
-  .photo-hover {
+.photo-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,8 +168,140 @@ nav a {
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
-  }
+}
   
-  .lien-conteneur-photo:hover .photo-hover {
+.lien-conteneur-photo:hover .photo-hover {
     display: flex;
+}
+
+table {
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 15px;
+  border: 1px solid #a5b4fc;
+}
+
+td {
+  padding: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    color: white;
+}
+  
+.form-nom-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+  
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  
+input,
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+  
+label {
+    margin-bottom: 10px;
+}
+  
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 996px) {
+    .accueil-introduction {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .accueil-introduction div {
+      padding-right: 0;
+      text-align: center;
+      order: 2;
+    }
+  
+    .accueil-introduction img {
+      order: 1;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  
+    .accueil-photos {
+      padding: 20px;
+    }
+  
+    .accueil-photos div {
+      flex-direction: column;
+    }
+  
+    .section-contact {
+      padding: 50px 20px;
+    }
+  
+    .form-nom-email {
+      flex-direction: column;
+      gap: 0;
+    }
+    .section-tarifs {
+        display: none;
+    }
+    .grid-paysages {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .grid-portraits {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header nav img {
+        margin-bottom: 20px;
+    }
+    
+    header,
+    footer {
+        padding: 20px 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    section {
+        padding: 50px 20px 50px 20px;
+    }
+    
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
   }

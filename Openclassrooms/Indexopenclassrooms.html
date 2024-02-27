@@ -10,21 +10,25 @@
 <body>
     <header>
         <nav>
-            <img src="/Openclassrooms/logo.png" alt="Logo Robbie Lens" class="lien-icone">
-            <a href="Indexopenclassrooms.html">Acceuil</a>
-            <a href="a-proposopenclassrooms.html">A propos</a>
-            <a href="portefeuilleopenclassrooms.html">Portfolio</a>
+            <a href="Indexopenclassrooms.html" class="lien-icone">
+                <img src="/Openclassrooms/logo.png" alt="Logo Robbie Lens" class="lien-icone">
+            </a>
+            <div>
+                <a href="Indexopenclassrooms.html">Acceuil</a>
+                <a href="a-proposopenclassrooms.html">À propos</a>
+                <a href="portefeuilleopenclassrooms.html">Portfolio</a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="accueil-introduction">
-            <h1>Robbie Lens Photographie</h1>
-            <p>
-              Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion
-              qui m’anime : capturer l’essence de chaque instant.
-            </p>
             <div>
-              <a href="" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+                <h1>Robbie Lens Photographie</h1>
+                <p>
+                  Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion
+                  qui m’anime : capturer l’essence de chaque instant.
+                </p>
+                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
             </div>
             <img src="/Openclassrooms/robbie-lens.png" alt="Portrait avec effet de la photographe Robbie Lens">
         </section>
@@ -41,15 +45,37 @@
                 <img src="/Openclassrooms/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" >
             </div>
         </section>
+        <section id="contact" class="section-contact">
+            <h2>Parlons de votre projet</h2>
+            <form method="get" action="#">
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">nom</label>
+                        <input type="text" name="nom" id="nom" >
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" >
+                    </div>
+                </div>
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <input type="submit" value="ENVOYER" class="cta" >
+            </form>
+        </section>
     </main>
     <footer>
-        <img src="/Openclassrooms/logo.png" alt="Logo Robbie Lens"  class="lien-icone">
-        <a target="_blank" href="https://twitter.com/">
-           <img src="/Openclassrooms/twitter.png" alt="Logo Twitter" class="lien-icone">
-       </a>
-       <a target="_blank" href="https://www.instagram.com/">
-          <img src="/Openclassrooms/instagram.png" alt="Logo Instagram" class="lien-icone">
-       </a>
+        <a href="Indexopenclassrooms.html" class="lien-icone">
+            <img src="/Openclassrooms/logo.png" alt="Logo Robbie Lens"  class="lien-icone">
+        </a>
+        <div>
+            <a target="_blank" href="https://twitter.com/">
+                <img src="/Openclassrooms/twitter.png" alt="Logo Twitter" class="lien-icone">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+               <img src="/Openclassrooms/instagram.png" alt="Logo Instagram" class="lien-icone">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
