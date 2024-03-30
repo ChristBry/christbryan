@@ -6,8 +6,8 @@ import os
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-# openai.api_key = "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" 
-openai.api_key = os.environ.get("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")
+openai.api_key = "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" 
+# openai.api_key = os.environ.get("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")
 
 openai.api_key = api_key
 
