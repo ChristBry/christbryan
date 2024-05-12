@@ -1,6 +1,6 @@
 /** ========================== typing animatio======= */
 var typed = new Typed(".typing",{
-    strings:["IT Manager","Information System manager","Network Administration","Business Intelligent","Project Manager","IT Aviation"],
+    strings:["Dev Fullstack MERN","IT Manager","DataBase Administrator","Project Manager",],
     typeSpeed:100,
     BackSpeed:60,
     loop:true
@@ -79,41 +79,50 @@ var options = {
       observerProgress.observe(p)
     })
 
-  /* fenetre modale services */
-  let modal = null
-
-  const openModal = function (e) {
-    e.preventDefault()
-    const target = document.querySelector('.modal')
-    target.style.display = null
-    target.removeAttribute('aria-hidden')
-    target.setAttribute('aria-modal', 'true')
-    modal = target
-    modal.addEventListener('click', closeModal)
-    modal.querySelector('.js-modal-stop').addEventListener('click', stopPropagation)
-  }
-
-  const closeModal = function (e) {
-    if (modal === null) return
-    e.preventDefault()
-    modal.style.display = 'none'
-    modal.setAttribute('aria-hidden', 'true')
-    modal.removeAttribute('aria-modal')
-    modal.removeEventListener('click', closeModal)
-    modal.querySelector('.js-modal-stop').removeEventListener('click', stopPropagation)
-    modal = null
-  }
-
-  const stopPropagation = function (e) {
-    e.stopPropagation()
-  }
-
-  document.querySelectorAll('.js-modal').forEach(a => {
-    a.addEventListener('click', openModal)
-  })
-
-  window.addEventListener('keydown', function (e) {
-    if (e.key === "Escape" || e.key === "Esc") {
-      closeModal(e)
+  /* Scroll */
+    const ratio = 0.6;
+    const activate = function (elem) {
+    const id = elem.getAttribute('id')
+    const anchor = document.querySelector(`a[href="#${id}"]`)
+    if (anchor === null) {
+      return null
     }
-  })
+      anchor.classList.add('active')
+  }
+
+  const remove = function (elem) {
+    const id = elem.getAttribute('id')
+    const anchor = document.querySelector(`a[href="#${id}"]`)
+    if (anchor === null) {
+      return null
+    }
+      anchor.classList.remove('active')
+  }
+
+  /**
+   * 
+   * @param {IntersectionObserverEntry[]} entries 
+   * @param {IntersectionObserver} observer 
+   */
+  const callback = function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.intersectionRatio > 0) {
+        activate(entry.target)
+      } else {
+        remove(entry.target)
+      }
+    })
+    
+  }
+
+  const spies = document.querySelectorAll('[data-spy]')
+
+  if (spies.length > 0) {
+    const y = Math.round(window.innerHeight * ratio)
+    const observer = new IntersectionObserver(callback, {
+      rootMargin: `-${window.innerHeight - y - 1}px 0px -${y}px 0px`
+    })
+    spies.forEach(function (spy) {
+      observer.observe(spy)
+    })
+  }

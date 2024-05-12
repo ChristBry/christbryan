@@ -21,7 +21,7 @@
     <!--- ===== Main content====== -->
     <div class="main-content">
         <!-- =========Aside Start===== -->
-        <div class="aside">
+        <div class="aside active">
             <div class="logo">
                 <a href="#"><span>D</span>igital</a>
             </div>
@@ -29,19 +29,18 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
                 <li><a href="#services"><i class="fa-solid fa-list"></i>Services</a></li>
                 <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i>Portefolio</a></li>
                 <li><a href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a></li>
-
             </ul>
         </div >
         <!-- ========Aside End ======= -->
         <!-- ========Main Content Start ==== -->
         <div class="main-content">
          <!--- ======== Home Section Start ========= -->
-           <section class="home section">
+           <section class="home section" id="home" data-spy>
               <div class="container">
                   <div class="row reveal">
                       <div class="home-info padd-15">
@@ -59,7 +58,7 @@
           </section>
          <!-----======== Home Section End ======= -->
          <!--- ======== About Section Start ========= -->
-         <section class="about section" id="about">
+         <section class="about section" id="about" data-spy>
              <div class="container reveal">
                  <div class="row reveal-1">
                      <div class="section-title padd-15">
@@ -207,7 +206,7 @@
                                                         which is an association which promotes professions in aeronautics and my role is to set up
                                                         and coordinate teams of young computer scientists in the implementation of new technologies in aeronautics.
                                                     </p>
-                                            </div>
+                                              </div>
                                           </div>
                                       </div>
                                   </div>
@@ -219,7 +218,7 @@
           </section>
           <!--- ======== About Section End ========= -->
           <!--- ======== Services Section Start ==== -->
-          <section class="service section" id="services">
+          <section class="service section" id="services" data-spy>
               <div class="container revealService">
                   <div class="row">
                       <div class="section-title padd-15">
@@ -233,13 +232,11 @@
                                <div class="icon">
                                   <i class="fa-solid fa-network-wired"></i>
                               </div>
-                              <a href="#modal1" id="modal1" class="js-modal">
-                                    <h4>System and Network</h4>
-                                    <p>Establish an information system for your company by setting  
+                                <h4>System and Network</h4>
+                                <p>Establish an information system for your company by setting  
                                         up a solid and secure infrastructure while creating a database  
                                         based on cloud hardware tools to increase the security of your data
-                                    </p>
-                              </a>
+                                </p>
                           </div>
                       </div>
                       <!--- ====== Service item end ====== -->
@@ -248,13 +245,13 @@
                            <div class="service-item-inner">
                                <div class="icon">
                                    <i class="fa-solid fa-code"></i>
-                               </div>
-                               <h4>Application devloppement</h4>
-                               <p>We develop applications to automate common tasks, 
-                                   finally maximize time and allow the creation of 
-                                   business applications which will be stored in the information system and available on remote servers.
-                              </p>
-                          </div>
+                                </div>
+                                <h4>Application devloppement</h4>
+                                <p>We develop applications to automate common tasks, 
+                                        finally maximize time and allow the creation of 
+                                        business applications which will be stored in the information system and available on remote servers.
+                                </p>                          
+                            </div>
                       </div>
                       <!--- ====== Service item end ====== -->
                       <!--- ====== Service item start ====== -->
@@ -276,7 +273,7 @@
           </section>
           <!--- ======== Services Section End ====== -->
           <!--- ======== Portfolio Section Start ====== -->
-          <section class="portfolio section" id="portfolio">
+          <section class="portfolio section" id="portfolio" data-spy>
               <div class="container reveal">
                   <div class="row">
                        <div class="section-title padd-15 reveal-1">
@@ -318,7 +315,7 @@
           </section>
           <!--- ======== Portfolio Section End ====== -->
           <!--- ======== Contact Section start ====== -->
-          <section class="contact section" id="contact">
+          <section class="contact section" id="contact" data-spy>
               <div class="container">
                   <div class="row">
                       <div class="section-title padd-15">
@@ -370,15 +367,6 @@
       <!-- ============ Main Content End ===== -->
     </div>
     <!-- =======Main content End ======== -->
-    <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="Titlemodal" style="display: none;">
-        <div class="modal-wrapper js-modal-stop">
-              <h1 class="Titlemodal">System and Network</h1>
-              <p>Establish an information system for your company by setting  
-                  up a solid and secure infrastructure while creating a database  
-                  based on cloud hardware tools to increase the security of your data
-              </p>
-        </div>
-    </aside>
     <!--  ====== Style Switcher Start ==== -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
