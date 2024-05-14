@@ -547,6 +547,10 @@ h3.hello span {
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
+    transition: transform 0.3s ease;
+}
+.portfolio .portfolio-item-inner .portfolio-img img:hover {
+    transform: scale(1.1);
 }
 .site-hover {
     position: absolute;
@@ -563,10 +567,12 @@ h3.hello span {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+    transition: transform 0.3s ease;
 }
 .lien-conteneur:hover .site-hover {
     display: flex;
-  }
+    transform: scale(1.1);
+}
 
 /* contact */
 .contact-title {
