@@ -420,6 +420,7 @@ h3.hello span {
     display: inline-block;
 }
 
+
 .about .about-content .personal-info .buttons {
     margin-top: 30px;
 }
@@ -548,7 +549,7 @@ h3.hello span {
 }
 
 .timeline-title1 {
-   
+
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
@@ -990,6 +991,10 @@ h3.hello span {
     transition-delay: .1s;
 }
 
+.revealService-visible .revealService-2 {
+    transition-delay: .1s;
+}
+
 .revealService .revealService-3 {
     transition-delay: .2s;
 }
@@ -1019,7 +1024,7 @@ h3.hello span {
         margin-left: 40px;
         margin-top: 20px;
         display: inline-flex;
-        padding-right: 100px;   
+        padding-right: 100px;
     }
 
     .aside .logo {
@@ -1031,7 +1036,7 @@ h3.hello span {
     .aside .logo a::before {
         display: none;
     }
-    
+
     .aside .logo a::after {
         display: none;
     }

@@ -1,7 +1,11 @@
 /** ========================== typing animatio======= */
 var typed = new Typed(".typing",{
     strings:["Dev Fullstack MERN","IT Manager","DataBase Administrator","Project Manager",],
+<<<<<<< HEAD
     strings:["Developer Full-Stack JavaScript","DevOps","IT Manager","Business Intelligent","Product Manager"],
+=======
+    strings:["DevOps","IT Manager","Network Administration","Business Intelligent","Product Manager","IT Aviation"],
+>>>>>>> ccc4ded1dc0e32febfd4f76606f77631b4e24796
     typeSpeed:100,
     BackSpeed:60,
     loop:true
