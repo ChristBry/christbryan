@@ -1014,14 +1014,14 @@ h3.hello span {
 /* responsive */
 @media (max-width : 1199px) {
     .aside {
-        left: -70px;
+        left: -20px;
         padding-top: 50px;
         width: 100vw;
         padding-right: 100px;
     }
 
     .aside .nav {
-        margin-left: 40px;
+        margin-left: 10%;
         margin-top: 20px;
         display: inline-flex;
         padding-right: 100px;
@@ -1030,7 +1030,7 @@ h3.hello span {
     .aside .logo {
         font-size: 30px;
         text-transform: capitalize;
-        margin-left: 140px;
+        margin-left: 10px;
     }
 
     .aside .logo a::before {
@@ -1043,7 +1043,12 @@ h3.hello span {
 
     .home {
         padding-top: 0px;
-        min-height: 80vh;
+        min-height: 0vh;
+        padding-top: 25%;
+    }
+
+    .about .section-title {
+        padding-top: 8%;
     }
 
     .main-content {
@@ -1086,8 +1091,7 @@ h3.hello span {
     }
 
     .home {
-        padding-top: 0px;
-        min-height: 60vh;
+        padding-top: 10%;
     }
 
     .social-icon {
@@ -1176,8 +1180,8 @@ h3.hello span {
     }
 
     .home {
-        padding-top: 0px;
-        min-height: 90vh;
+        padding-top: 0%;
+        padding-top: 30%;
     }
 
     .social-icon {
@@ -1212,7 +1216,7 @@ h3.hello span {
     }
 
     .about .section-title {
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .service .section-title {
