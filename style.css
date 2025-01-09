@@ -923,6 +923,23 @@ h3.hello span {
     font-size: 15px;
 }
 
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /*animation avec heritage de l'element precedent*/
 .reveal [class*="reveal-"] {
     opacity: 0;
